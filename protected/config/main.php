@@ -26,7 +26,7 @@ return array(
 			'class'=>'system.gii.GiiModule',
 			'password'=>'gii',
 			// If removed, Gii defaults to localhost only. Edit carefully to taste.
-			'ipFilters'=>array('127.0.0.1','::1'),
+			'ipFilters'=>array('31.170.165.1','::1'),
 		),
 		
 	),
@@ -54,10 +54,10 @@ return array(
 		// uncomment the following to use a MySQL database
 		
 		'db'=>array(
-			'connectionString' => 'mysql:host=localhost;dbname=db_works',
+			'connectionString' => 'mysql:host=mysql.hostinger.vn;dbname=u568443976_tdmu',
 			'emulatePrepare' => true,
-			'username' => 'root',
-			'password' => '',
+			'username' => 'u568443976_tdmu',
+			'password' => '123456',
 			'charset' => 'utf8',
 			'tablePrefix'=>'tbl_',
 		),
@@ -87,6 +87,6 @@ return array(
 	// using Yii::app()->params['paramName']
 	'params'=>array(
 		// this is used in contact page
-		'adminEmail'=>'d13ht01@gmail.com',
+		'adminEmail'=>'huydoan95.httt@gmail.com',
 	),
 );
