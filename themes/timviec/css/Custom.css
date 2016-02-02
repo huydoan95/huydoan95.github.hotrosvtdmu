@@ -1,0 +1,269 @@
+.search_tc{
+padding-left:130px !important;
+}
+.tctt_left2 .search_tc{
+padding-left:10px !important;
+}
+.search_tc a, .tctt_search a{
+font-size:12px;
+/*
+	background:url("../images/vim-sprite.png") no-repeat scroll right -94px transparent;
+	color:#FFFFFF;
+	font-size:12px;
+	font-weight:bold;
+	padding:5px 48px 10px 28px;*/
+}
+ 
+.search_tc  a:hover, .tctt_search a:hover{
+	background:url("../images/vim-sprite.png") no-repeat scroll -742px -94px transparent;
+}
+.tctt_search{
+	border-top:1px solid MediumTurquoise;
+	padding-top:10px;
+}
+.vieclam_searchs{
+margin:0;
+padding:0;
+}
+
+.vieclam_searchs p{
+display:inline;
+float:left;
+font-weight:bold;
+padding-left:6px;
+padding-top:6px;
+width:230px;
+}
+.vieclam_searchs p a{
+color:#333333;
+font-size:11px;
+font-weight:bold;
+padding:6px 0;
+}
+.vieclam_searchs p a:hover{
+	color:#FF6600;
+}
+.vieclam_searchs p span{
+color:#FF6600;
+padding-left:7px;
+font-weight:normal;
+}
+.css_dangky .tctt_left2 .check_css_search input{
+	margin-right:6px;
+	width:4px;
+	height:0;
+	line-height:0;
+}
+.css_dangky .tctt_left2 .check_css_search{
+padding-top:4px;
+}
+.css_dangky .tctt_left2 .title_kq_tim_kien{
+font-weight:bold;
+}
+.messageBox .generalMessage {
+background:url("../images/icon-info.png") no-repeat scroll 10px 7px #E4F5FF;
+border:1px solid #66CCFF;
+color:#0099FF;
+}
+.messageBox .generalMessage {
+	color:#0099FF;
+	font-size:13px;
+	padding-left:42px;
+	padding-top:8px;
+}
+#system-message {
+background:url("../images/icon-info.png") no-repeat scroll 10px 7px #E4F5FF;
+border:1px solid #66CCFF;
+color:#0099FF;
+}
+.error {
+	color:#0099FF;
+	font-size:13px;
+	padding-left:42px;
+	padding-top:8px;
+}
+.searchInfo {
+color:#666666;
+display:block;
+font-size:0.95em;
+margin:5px 0;
+padding:0;
+}
+.messageBox div {
+font-family:arial;
+clear:both;
+margin:2px 0;
+ 
+}
+.tim_k_more{
+
+}
+.tim_k_more .morong_tc_a{
+
+}
+.tim_k_more .morong_tc_a span{
+
+}
+.tim_k_more .morong_tc_a span a{
+color:CornflowerBlue;
+font-weight:bold;
+padding-left:17px;
+text-decoration:underline;
+}
+.tim_k_more .morong_tc_a span a:hover{
+color:red;
+}
+.timthem_vl{
+padding:10px 0;
+}
+.tctt_left2 .timthem_vl .search_tc {
+padding-left:55px !important;
+}
+.rc_tableList span {
+float:left;
+padding:2px 0 2px 10px;
+}
+.rc_tableList span {
+float:left;
+padding:4px 0 6px 10px;
+}
+.rc_col_250px {
+width:220px;
+}
+.rc_tableList dt a, .rc_tableList dt a:hover {
+color:#fff !important;
+}
+.rc_tableList dt a {
+color:#fff !important;
+}
+.rc_tableList dd {
+border-left:1px solid #DEDEDE;
+border-right:1px solid #DEDEDE;
+display:block;
+font-size:1.05em;
+height:1%;
+margin:0;
+padding:15px 0;
+}
+.rc_tableList dt {
+background:none repeat scroll 0 0 #006699;
+border-left:1px solid #DEDEDE;
+border-right:1px solid #DEDEDE;
+color:#FFFFFF;
+font-weight:700;
+height:1%;
+padding:0;
+text-transform:uppercase;
+ }
+ .rc_tableList span {
+float:left;
+padding:2px 17px;
+}
+ .rc_tableList .rc_rowEven span, .rc_tableList .rc_rowOdd span {
+float:left;
+padding:2px 45px 0 14px;
+}
+#candidates_table{
+margin-top:0px;
+}
+.rc_tableList dd.rc_rowOdd a, .rc_tableList dd.rc_rowEven a {
+font-weight:bold;
+}
+
+ .rc_rowOdd, .rc_rowEven {
+ border-top:2px solid MediumTurquoise;
+background:url("http://images.vietnamworks.com/em_tbl_row_nor.png") repeat-x scroll left top transparent;
+}
+.rc_tableList .rc_jobDescription {
+color:#333333;
+display:block;
+font-size:1em;
+line-height:12px;
+margin:3px 10px 0 0;
+text-align:left;
+width:710px;
+}
+.rc_tableList .rc_jobInformation {
+color:#006699;
+display:block;
+font-size:0.95em;
+line-height:14px;
+margin-top:5px;
+text-align:left;
+width:710px;
+}
+.rc_tableList .subTitle {
+color:#FF9900;
+font-size:0.95em;
+font-weight:bold;
+margin:0;
+padding:0;
+text-align:left !important;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

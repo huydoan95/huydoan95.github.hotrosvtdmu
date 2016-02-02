@@ -1,0 +1,65 @@
+
+/*box up*/
+.box_up{
+background:#fff;
+padding:6px;
+font-family:arial;
+}
+.clear{
+clear:both;
+}
+.but_box{
+border-top:1px solid #CCCCCC;
+font-size:12px;
+padding-bottom:4px;
+padding-top:4px;
+color:red
+}
+.but_box input{
+cursor:pointer;
+margin-left:183px;
+} 
+.box_up h1{
+border-bottom:1px solid #CCCCCC;
+font-family:arial;
+font-size:17px;
+margin:0 0 7px;
+padding:0 0 3px;
+}
+.chitiet_box {
+width:605px;
+}
+.chitiet_box td{
+color:#333333;
+font-size:12px;
+padding:3px 0;
+}
+.chitiet_box td.mt_b{
+font-weight:bold;
+}
+.chitiet_box td.mt_a{
+color:DodgerBlue;
+}
+.chitiet_vlboc{
+width:605px
+}
+.chitiet_vlboc td{
+font-size:12px;
+padding:3px 0;
+}
+.chitiet_vlboc td.mt_b{
+font-weight:bold;
+}
+.chitiet_vlboc td.mt_a{
+color:DodgerBlue;
+}
+.but_box table{
+
+}
+.but_box table td{
+font-size:12px;
+padding:3px 0;
+font-weight:bold;
+}
+
+/*box up*/

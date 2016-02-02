@@ -1,0 +1,373 @@
+.menu-top{
+margin:0;
+padding:0;
+width: 60%;
+}
+.menu-top ul{
+	padding:0;
+	text-align:right;
+}
+.menu-top ul li{
+	display:inline;
+	float:right;
+	margin-left:10px;
+}
+.menu-top ul li a{
+	border-right:1px solid buttonshadow;
+	color:#303030;
+	font-size:11px;
+	margin:0;
+	padding:0 13px 0 3px;
+	font-weight:bold;
+}
+.menu-top ul li.last a{
+border-right:none;
+
+}
+.menu-top ul li.c1{
+	background:url(../images/icon_sitemap.jpg) no-repeat center left;
+}
+.menu-top ul li.c2{
+	background:url(../images/icon_hone.jpg) no-repeat center left;
+}
+.menu-top ul li a:hover{
+color:Highlight;
+}
+.box_menu_top{
+	background:url(../images/bg_menu_top.jpg) repeat-x left top;
+	width:100%;
+	height:30px;
+	line-height:30px;
+}
+.box_horizontalmenu{
+width:1000px;
+margin:0 auto;
+position:relative;
+
+}
+.horizontalmenu{
+	margin:0;
+	padding:0;
+	float:left;
+display:inline;
+}
+.langua{
+display:inline;
+float:right;
+font-size:11px;
+color:#fff;
+}
+.langua p{
+
+}
+.langua p span{
+padding:0;
+padding-left:10px;
+}
+.langua a{
+color:#fff;
+font-weight:bold;
+text-shadow:0 1px 1px #333333;
+}
+.langua a:hover{
+
+color:gold;
+}
+.horizontalmenu ul{
+padding-left:17px;
+}
+.horizontalmenu ul li{
+	float:left;
+	display:inline;	
+	text-align:left;
+
+}
+.horizontalmenu ul li.last a{
+	background:none;
+}
+.horizontalmenu ul li.cren a{
+	background:url("../images/vim-sprite.png") no-repeat scroll -969px -232px transparent;
+	padding-left:38px;
+}
+.horizontalmenu ul li a{
+	height:30px;
+	line-height:30px;
+	padding:0 25px;
+	display:inline;
+	float:left;
+	font-size:11px;
+	font-weight:bold;
+	color:#fff;
+}.horizontalmenu ul li a:hover{
+text-shadow:1px 1px 1px #333333;
+color:gold;
+}
+.horizontalmenu ul li a span{
+	padding:10px 0;
+	
+}
+.horizontalmenu ul li a:hover span{
+}
+.menu_left{
+
+padding-top:7px;
+}
+.menu_left ul{
+	margin:0;
+	padding:0;
+
+}
+.menu_left ul li{
+	clear:both;
+	display:block;
+	margin-left:0;
+	padding:0;
+	margin-left:8px;
+
+}
+.menu_left ul li.active{
+	margin-left:9px;
+
+}
+.menu_left ul li li{
+	background:none repeat scroll 0 0 transparent;
+	border-bottom:1px dotted #6E6E6E;
+	display:block;
+	margin-left:24px;
+	padding:0;
+	width:200px;
+}
+.menu_left ul li ul{
+padding-bottom:10px;
+}
+.menu_left ul li.active li a {
+	background:url("../images/icon_a_right.jpg") no-repeat scroll left center transparent;
+	color:#333333;
+	height:30px;
+	line-height:30px;
+	padding-left:13px;
+	width:130px;
+}
+.menu_left ul li.active li a:hover {
+background:url("../images/hover_a.jpg") no-repeat scroll left center transparent;
+color:#c61a1a;
+}
+.menu_left ul li li a span{
+padding-left:0;
+font-weight:normal;
+}
+
+.menu_left ul li a{
+	background:url("../images/icon_a_right.jpg") no-repeat scroll 10px 9px transparent;
+	color:#3e4244;
+	font-size:12px;
+	font-weight:bold;
+	width:225px;
+	height:25px;
+	line-height:25px;
+	display:block;
+	
+}
+.menu_left ul li a:hover{
+	background:url("../images/active_menu.jpg") no-repeat scroll left top transparent;
+	color:#fff;
+}
+.menu_left ul li.active a{
+	background:url("../images/active_menu.jpg") no-repeat scroll left top transparent;
+	color:#fff;
+	
+}
+.menu_left ul li a span{
+	padding-left:23px;
+}
+.box_nghe_hot ul{
+	padding-left:3px;
+}
+.box_nghe_hot ul li{
+	float:left;
+	display:inline;
+	width:178px;
+}
+
+.box_nghe_hot ul li a{
+	background:url("../images/vim-sprite.png") no-repeat scroll -995px -294px transparent;
+	color:#FFFFFF;
+	padding-left:10px;
+}
+.box_nghe_hot ul li a:hover{
+	background:url("../images/vim-sprite.png") no-repeat scroll -995px -272px transparent;
+	color:#fffc00;
+}
+.box_nghe_hot .view_all{
+	border-top:1px dotted #FFFFFF;
+	margin-left:18px;
+	width:336px;
+}
+.box_nghe_hot .view_all a{
+	color:#fff;
+	font-weight:bold;
+	text-decoration:underline;
+}
+.box_nghe_hot .view_all a:hover{
+	color:Gold;
+
+}
+.box_dk_td{
+padding-top:6px;
+}
+.box_dk_td .ntv_dk{
+	float:left;
+	display:inline;
+	width:180px;
+}
+.box_dk_td .cntd_dk{
+	float:left;
+	display:inline;
+	width:180px;
+}
+.box_dk_td .ntv_dk a{
+	background:url("../images/vim-sprite.png") no-repeat scroll -822px -137px transparent;
+	color:OliveDrab;
+	font-size:10px;
+	padding:5px 44px 17px 24px;
+}
+.box_dk_td .cntd_dk a{
+	background:url("../images/vim-sprite.png") no-repeat scroll -822px -137px transparent;
+	color:OliveDrab;
+	font-size:10px;
+	padding:5px 45px 17px 16px;
+}
+.box_dk_td .ntv_dk a:hover{
+	background:url("../images/vim-sprite.png") no-repeat scroll -607px -137px transparent;	
+	color:#048cff;
+}
+.box_dk_td .cntd_dk a:hover{
+	background:url("../images/vim-sprite.png") no-repeat scroll -607px -137px transparent;
+	color:#048cff;
+}
+.box-footer{
+
+}
+.menu_footer{
+background:none repeat scroll 0 0 #2BA6FF;
+height:30px;
+line-height:30px;
+margin-top:13px;
+width:100%;
+}
+.menu_footer ul{
+width:1000px;
+margin:0 auto;
+}
+.menu_footer ul li{
+display:inline;
+float:left;
+}
+.menu_footer li a{
+color:#FFFFFF;
+font-size:11px;
+font-weight:bold;
+padding:0 13px;
+}
+.menu_footer li a:hover{
+text-shadow:1px 1px 1px #333;
+*color:#333;
+}
+.copy_right{
+	background:url("../images/bg_footer.jpg") repeat-x scroll left top #E3E3E3;
+	margin:0 auto;
+	text-align:center;
+	width:100%;
+}
+.copy_right p{
+	color:#7B7B7B;
+	font-size:11px;
+	padding-bottom:20px;
+	padding-top:30px;
+}
+
+/*search viec lam*/
+.css_searchvieclam{
+
+}
+.css_nganhnghe{
+
+}
+.css_dangky .css_nganhnghe h1{
+background:none repeat scroll 0 0 LightSteelBlue;
+color:red;
+font-family:arial;
+font-size:13px;
+font-weight:bold;
+margin-bottom:10px;
+margin-left:0;
+margin-top:10px;
+padding:0 0 1px 10px;
+}
+.css_nganhnghe .chitiet_tuyendung h1{
+	background:none repeat scroll 0 0 Gray;
+	color:#FFFFFF;
+	font-family:arial;
+	font-size:12px;
+	font-weight:bold;
+	margin-bottom:11px;
+	margin-left:0;
+	margin-top:10px;
+	padding:1px 3px 1px 10px;
+}
+
+.vieclam_searc {
+display:inline;
+float:left;
+margin-left:17px;
+width:227px;
+}
+.vieclam_searc h2{
+	border-bottom:1px dotted #CCCCCC;
+	color:DodgerBlue;
+	font-family:arial;
+	font-size:99%;
+	font-weight:bold;
+	padding:0;
+}
+.vieclam_searc p {
+padding-left:6px;
+}
+.vieclam_searc p a{
+color:#333333;
+font-size:11px;
+}
+.vieclam_searc p a:hover{
+color:#ff6600
+}
+.vieclam_searc p span{
+padding-left:7px;
+color:#FF6600;
+}
+/*search viec lam*/
+.chex_nghe{
+
+}
+.chex_nghe ul{
+padding-bottom:3px;
+padding-top:5px;
+}
+.chex_nghe li{
+display:inline;
+font-weight:bold;
+padding-left:8px;
+}
+.chex_nghe li a{
+text-decoration:underline;
+}
+.chex_nghe li a:hover{
+
+}
+.icon_home{
+background:url("../images/vim-sprite.png") no-repeat scroll -970px -232px transparent;
+	position:absolute;
+	float:left;
+	width:31px;
+	height:27px;
+	z-index:100
+}

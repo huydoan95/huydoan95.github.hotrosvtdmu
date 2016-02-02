@@ -1,0 +1,230 @@
+/* CSS Document*/
+*{
+	margin:0;
+	padding:0;
+}
+/* CSS Document */
+	html, body, div, span, applet, object, iframe,
+	h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+	a, abbr, acronym, address, big, cite, code,
+	del, dfn, em, font, img, ins, kbd, q, s, samp,
+	small, strike, strong, sub, sup, tt, var,
+	b, u, i, center,
+	dl, dt, dd, ol, ul, li,
+	fieldset, form, label, legend,
+	table, caption, tbody, tfoot, thead, tr, th, td {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	font-size: 100%;
+	background: transparent;
+}
+
+ol, ul, li {
+	list-style: none;
+}
+	blockquote, q {
+	quotes: none;
+}
+/* remember to define focus styles */
+:focus {
+	outline: 0;
+}
+/* remember to highlight inserts */
+ins {
+	text-decoration: none;
+}
+del {
+	text-decoration: line-through;
+}
+	table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+img{
+	border:none;
+}
+form{
+	margin:0;
+	padding:0;
+}
+ul, li{
+	list-style:none;
+}
+.clear{
+	clear:both;
+}
+a{
+	text-decoration:none;
+	color:#333;
+}
+a:hover{
+	color:#FF6600;
+}
+body{
+	background:url("../images/background.jpg") repeat-x scroll left top #FFFFFF;
+	font-family:Arial;
+	font-size:11px;
+	text-align:justify;
+	line-height:170%;
+	margin:0;
+	padding:0;
+}
+#header{
+background:none repeat scroll 0 0 #FFFFFF;
+margin:0 auto;
+width:100%;
+}
+#box_main{
+	margin:0 auto;
+	padding:0;
+	width:100%;
+}
+.box_header{
+	margin:0 auto;
+	overflow:hidden;
+	padding:0;
+	position:relative;
+	width:1000px;
+}
+.logo{
+	float:left;
+	left:24px;
+	*left:25px;
+	position:absolute;
+	top:28px;
+	z-index:10;
+}
+.logo img{
+	width:117px;
+	height:117px;
+}
+
+#content{
+	background:none repeat scroll 0 0 #FFFFFF;
+	width:1000px;
+	font-size:11px;
+	margin:0 auto;
+	padding:10px;
+}
+
+#center{
+	display:inline;
+	float:left;
+	margin-left:8px;
+	width:580px;
+	margin-top:15x;
+
+}
+#center2{
+	display:inline;
+	float:left;
+	margin-left:0px;
+	width:743px;
+	margin-top:3px !important;
+	overflow:hidden;
+
+}
+#left{
+	display:inline;
+	float:left;
+	margin-left:0px;
+	width:232px;
+	margin-top:10px;
+}
+
+#right{
+	float:right;
+	width:178px;
+	display:inline;
+	margin-right:0px;
+	margin-top:10px;
+}
+#footer{
+	clear:both;
+	width:100%;
+	font-size:12px;
+	margin:0 auto;
+	padding:0;
+}
+
+.bar-top{
+	background:url("../images/bar_left.jpg") no-repeat scroll center top transparent;
+	height:36px;
+	line-height:36px;
+	width:234px;
+	margin-top:4px;
+}
+.bar-top span{
+	color:#fff;
+	font-size:17px;
+	padding-top:3px;
+	padding-left:30px;
+
+}
+.box_menu_dt{
+	background:none repeat scroll 0 0 threedlightshadow;
+	height:22px;
+	line-height:22px;
+	width:100%;
+}
+.css_vldt_top {
+	margin:0 auto;
+	width:1000px;
+	padding:0px;
+	color:#303030;
+	font-size:11px;
+}
+.dangtuyen_css{
+	visibility: hidden;
+	display:inline;
+	float:left;
+	width:20%;
+}
+.dangtuyen_css p{
+	text-shadow:1px 1px 1px #FFFFFF;
+}
+.dangtuyen_css p span{
+	color:#ff0000;
+	padding-left:3px;
+	font-weight:bold;
+}
+.menu-top{
+	display:inline;
+	float:right;
+	width:70%;
+}
+.box_logo{
+
+}
+.logos{
+	float:left;
+	display:inline;
+	width:400px;
+}
+.logos h1{
+padding:3px;
+}
+
+.logos h1 a{
+	background:url("../images/logo-timviec.png") no-repeat scroll left top transparent;
+	background-size: contain;
+	display:block;
+	height:94px;
+	text-indent:-2000em;
+	width:339px;
+}
+.qc_tops{
+	display:inline;
+	float:right;
+	width:427px;
+	margin-top:15px;
+}
+.qc_tops a{
+
+}
+.qc_tops img{
+	padding-top:15px;
+}

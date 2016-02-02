@@ -1,0 +1,226 @@
+<?php
+
+class SiteController extends Controller {
+
+	/**
+	 * Declares class-based actions.
+	 */
+	public function actions() {
+		return array(
+			// captcha action renders the CAPTCHA image displayed on the contact page
+			'captcha' => array(
+				'class' => 'CCaptchaAction',
+				'backColor' => 0xFFFFFF,
+			),
+			// page action renders "static" pages stored under 'protected/views/site/pages'
+			// They can be accessed via: index.php?r=site/page&view=FileName
+			'page' => array(
+				'class' => 'CViewAction',
+			),
+		);
+	}
+
+	
+	
+	/**
+	 * This is the default 'index' action that is invoked
+	 * when an action is not explicitly requested by users.
+	 */
+	public function actionIndex() {
+		// renders the view file 'protected/views/site/index.php'
+		// using the default layout 'protected/views/layouts/main.php'
+		$dataProvider=new CActiveDataProvider('Hosotimviec');
+		//$dataProvider->model->getAttribute('hosocanhan_id');
+		$this->render('index',array(
+			'dataProvider'=>$dataProvider,
+		));
+		//$this->render('index');
+	}
+	
+	public function actionView($id)
+	{
+		$this->render('view',array(
+			'model'=>$this->loadModel($id),
+		));
+	}
+
+	/**
+	 * This is the action to handle external exceptions.
+	 */
+	public function actionError() {
+		if ($error = Yii::app()->errorHandler->error) {
+			if (Yii::app()->request->isAjaxRequest)
+				echo $error['message'];
+			else
+				$this->render('error', $error);
+		}
+	}
+
+	/**
+	 * Displays the contact page
+	 */
+	public function actionContact() {
+		$model = new ContactForm;
+		if (isset($_POST['ContactForm'])) {
+			$model->attributes = $_POST['ContactForm'];
+			if ($model->validate()) {
+				$name = '=?UTF-8?B?' . base64_encode($model->name) . '?=';
+				$subject = '=?UTF-8?B?' . base64_encode($model->subject) . '?=';
+				$headers = "From: $name <{$model->email}>\r\n" .
+						"Reply-To: {$model->email}\r\n" .
+						"MIME-Version: 1.0\r\n" .
+						"Content-type: text/plain; charset=UTF-8";
+
+				mail(Yii::app()->params['adminEmail'], $subject, $model->body, $headers);
+				Yii::app()->user->setFlash('contact', 'Cảm ơn đã liên lạc với chúng tôi. Chúng tôi sẽ phản hồi cho bạn ngay khi có thể.');
+				$this->refresh();
+			}
+		}
+		$this->render('contact', array('model' => $model));
+	}
+
+	/**
+	 * Displays the login page
+	 */
+	public function actionLogin() {
+		$model = new LoginForm;
+
+		// if it is ajax validation request
+		if (isset($_POST['ajax']) && $_POST['ajax'] === 'login-form') {
+			echo CActiveForm::validate($model);
+			Yii::app()->end();
+		}
+
+		// collect user input data
+		if (isset($_POST['LoginForm'])) {
+			$model->attributes = $_POST['LoginForm'];
+			// validate user input and redirect to the previous page if valid
+			if ($model->validate() && $model->login())
+				$this->redirect(Yii::app()->user->returnUrl);
+		}
+		// display the login form
+		$this->render('login', array('model' => $model));
+	}
+
+	/**
+	 * Displays the register employee page
+	 */
+	public function actionRegisterNtv() {
+
+		$model = new RegisterForm;
+		$newUser = new User;
+
+		// if it is ajax validation request
+		if (isset($_POST['ajax']) && $_POST['ajax'] === 'registerntv-form') {
+			echo CActiveForm::validate($model);
+			Yii::app()->end();
+		}
+
+		// collect user input data
+		if (isset($_POST['RegisterForm'])) {
+			$model->attributes = $_POST['RegisterForm'];
+
+			$newUser->loainguoidung = 0;
+			$newUser->username = $model->username;
+			$newUser->password = $newUser->hashPassword($model->password);
+			$newUser->email = $model->email;
+			if ($newUser->save() && $model->register()) {
+				//redirect the user to page he/she came from
+				$this->redirect(Yii::app()->user->returnUrl);
+			}
+		}
+		//$newUser->joined = date('Y-m-d');
+		// display the register form
+		$this->render('registerntv', array('model' => $model));
+	}
+
+	/**
+	 * Displays the register employee page
+	 */
+	public function actionRegisterNtd() {
+
+		$model = new RegisterForm;
+		$newUser = new User;
+
+		// if it is ajax validation request
+		if (isset($_POST['ajax']) && $_POST['ajax'] === 'registerntd-form') {
+			echo CActiveForm::validate($model);
+			Yii::app()->end();
+		}
+
+		// collect user input data
+		if (isset($_POST['RegisterForm'])) {
+			$model->attributes = $_POST['RegisterForm'];
+			$newUser->loainguoidung = 1;
+			$newUser->username = $model->username;
+			$newUser->password = $newUser->hashPassword($model->password);
+			$newUser->email = $model->email;
+			if ($newUser->save() && $model->register()) {
+				//redirect the user to page he/she came from
+				$this->redirect(Yii::app()->user->returnUrl);
+			}
+		}
+		//$newUser->joined = date('Y-m-d');
+		// display the register form
+		$this->render('registerntd', array('model' => $model));
+	}
+
+	/**
+	 * Logs out the current user and redirect to homepage.
+	 */
+	public function actionLogout() {
+		Yii::app()->user->logout();
+		$this->redirect(Yii::app()->homeUrl);
+	}
+
+	protected function getCapBac() {
+		return CHtml::listData(Capbac::model()->findAll(), 'id', 'capbac');
+	}
+
+	protected function getHinhThuc() {
+		return CHtml::listData(Hinhthuc::model()->findAll(), 'id', 'hinhthuc');
+	}
+
+	/**
+	 * Lấy danh sách địa điểm từ csdl 
+	 */
+	protected function getDiaDiem() {
+		return CHtml::listData(Diadiem::model()->findAll(), 'id', 'diadiem');
+	}
+
+	/**
+	 * Lấy danh sách ngành nghề từ csdl 
+	 */
+	protected function getNganhNghe() {
+		return CHtml::listData(Nganhnghe::model()->findAll(), 'id', 'nganhnghe');
+	}
+
+	/**
+	 * Lấy danh mức lương từ csdl 
+	 */
+	protected function getMucLuong() {
+		return CHtml::listData(Mucluong::model()->findAll(), 'id', 'mucluong');
+	}
+
+	/**
+	 * Lấy danh sách trình độ từ csdl 
+	 */
+	protected function getTrinhDo() {
+		return CHtml::listData(Trinhdohv::model()->findAll(), 'id', 'trinhdo');
+	}
+
+	/**
+	 * Lấy danh sách số năm kinh nghiệm từ csdl 
+	 */
+	protected function getSnKn() {
+		return CHtml::listData(Sonamkn::model()->findAll(), 'id', 'sonamkn');
+	}
+
+	public function loadModel($id)
+	{
+		$model=Hosotimviec::model()->findByPk($id);
+		if($model===null)
+			throw new CHttpException(404,'The requested page does not exist.');
+		return $model;
+	}
+}
